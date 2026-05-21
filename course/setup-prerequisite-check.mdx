@@ -1,0 +1,182 @@
+---
+title: "Module 0: Setup & Prerequisite Check"
+description: "Prepare all tools, accounts and accounts before Module 1."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Module 0: Setup & Prerequisite Check
+
+
+## Purpose
+
+This module prevents tool blockers during the Eid learning sprint. Students must confirm that their machine, accounts, GitHub workflow, Antigravity access, NotebookLM workflow, Figma inspection, MongoDB Atlas, and deployment accounts are ready.
+
+## Required accounts
+
+- Google account
+- GitHub account
+- Figma account
+- MongoDB Atlas account
+- Vercel account
+- Render account
+- NotebookLM access
+- Google Antigravity access
+
+## Required software
+
+- Google Chrome
+- Google Antigravity
+- Node.js LTS
+- npm
+- Git
+- Postman, Thunder Client, Insomnia or Hoppscotch
+- Figma desktop or browser access
+
+## Terminal readiness check
+
+```bash
+node -v
+npm -v
+git --version
+```
+
+## GitHub readiness check
+
+Create a test repository named `antigravity-setup-check`, then practice `git init`, `git add`, `git commit`, remote setup, and push.
+
+## Antigravity readiness check
+
+Create a folder named `antigravity-setup-test` and ask Antigravity to read a README, create a checklist, and avoid installing packages.
+
+## Figma readiness check
+
+Open a free Figma Community file and confirm that you can inspect colors, font sizes, spacing, export/screenshot a frame, and copy a frame link.
+
+## MongoDB Atlas readiness check
+
+Confirm that your cluster, database user, secure password, network access, and connection string are ready.
+
+
+## Official resources
+
+
+| Resource | Link | Why use it |
+|---|---|---|
+| Google Antigravity Docs | https://antigravity.google/docs/ | Antigravity concepts, agent workflow, browser, MCP, skills and artifacts |
+| React Docs | https://react.dev/learn | Core React concepts for components, state, and UI structure |
+| Vite Docs | https://vite.dev/guide/ | React/Vite setup and local development |
+| Tailwind CSS Docs | https://tailwindcss.com/docs | Utility-first styling and responsive design |
+| Figma Dev Mode | https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode | Developer handoff and design inspection |
+| Express Docs | https://expressjs.com/ | Backend routing, middleware, and error handling |
+| MongoDB Docs | https://www.mongodb.com/docs/ | Database setup and data modeling |
+| Mongoose Docs | https://mongoosejs.com/docs/ | MongoDB ODM schemas and models |
+| TanStack Query | https://tanstack.com/query/latest/docs/framework/react/quick-start | Server state, queries, mutations, invalidation |
+| Vitest | https://vitest.dev/ | Frontend/unit testing |
+| Playwright | https://playwright.dev/ | Browser and E2E verification |
+| Next.js Docs | https://nextjs.org/docs/app | Advanced full-stack React framework |
+
+
+## Required video layer
+
+<YouTubeEmbed videoId="uzFOhkORVfk" title="Google Antigravity overview" />
+
+Use the video like this:
+
+1. Watch only the relevant parts.
+2. Pause when the workflow is shown.
+3. Write 3–5 lessons in `docs/VIDEO_LEARNING_NOTES.md`.
+4. Add the video link to NotebookLM.
+5. Apply lessons to the practice tasks.
+
+## NotebookLM workflow
+
+Create a notebook named after this module and add this page, the official docs, selected videos, and your project files.
+
+Use this prompt:
+
+```txt
+Create a practical study guide for this module.
+
+Audience:
+Junior MERN developers using Antigravity and NotebookLM.
+
+Output:
+1. Key concepts
+2. Simple explanations
+3. Step-by-step practice workflow
+4. Common mistakes
+5. Submission checklist
+6. 10 quiz questions with answers
+```
+
+## Antigravity safe prompt pattern
+
+```txt
+Read only:
+- [exact file 1]
+- [exact file 2]
+
+Goal:
+[exact task]
+
+Rules:
+- Do not modify unrelated files.
+- Do not install packages without approval.
+- Before editing, list files you will create or modify.
+- After editing, summarize changes.
+- Include verification steps.
+```
+
+## Practice missions
+
+### Practice Mission 1: Create setup checklist
+
+Use Antigravity to create `docs/SETUP_CHECKLIST.md` without writing app code.
+
+### Practice Mission 2: Create NotebookLM setup guide
+
+Use NotebookLM to summarize the setup tools and common mistakes.
+
+### Practice Mission 3: Submit readiness proof
+
+Collect screenshots and links in one message.
+
+
+## Required submissions
+
+- Screenshot of node/npm/git versions
+- GitHub test repo link
+- Antigravity setup test screenshot
+- NotebookLM setup guide screenshot
+- Figma inspect screenshot
+- MongoDB Atlas cluster screenshot
+- Short reflection
+
+<Checklist
+  title="Module submission checklist"
+  items={[
+    'NotebookLM study evidence submitted',
+    'Video learning notes submitted',
+    'Required docs/files created',
+    'Antigravity output reviewed manually',
+    'Critical fixes applied',
+    'GitHub updated',
+    'Reflection completed'
+  ]}
+/>
+
+<Quiz moduleId="setup" />
+
+## Mentor evaluation checklist
+
+| Area | Pass condition |
+|---|---|
+| Learning evidence | NotebookLM and video notes exist |
+| Practical work | Missions completed with screenshots/docs |
+| Antigravity discipline | Scoped prompts and review gates used |
+| Quality | Critical issues fixed |
+| GitHub | Work committed and organized |
+| Reflection | Student explains what was learned and corrected |

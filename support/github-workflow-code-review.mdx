@@ -1,0 +1,77 @@
+---
+title: "GitHub Workflow and Code Review"
+description: "Branching, commits, issues, PRs and Antigravity-assisted review workflow."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# GitHub Workflow and Code Review
+
+
+## Branch naming
+
+```txt
+feature/home-page
+feature/auth-api
+fix/cors-production
+docs/readme-update
+test/api-auth-tests
+```
+
+## Commit format
+
+```txt
+feat: add menu page
+fix: handle empty cart checkout
+docs: update deployment guide
+test: add auth API tests
+chore: configure eslint
+```
+
+## Issue template
+
+```md
+# Issue Title
+
+## Problem
+-
+
+## Expected outcome
+-
+
+## Tasks
+- [ ]
+
+## Acceptance criteria
+- [ ]
+```
+
+## PR checklist
+
+- No secrets committed
+- No unrelated files changed
+- Build/test run
+- Screenshots added
+- Docs updated
+- Mentor review completed
+
+## Antigravity PR review prompt
+
+```txt
+Act as a senior code reviewer.
+Review changed files for scope, quality, security, TypeScript, responsiveness, API consistency, tests and docs.
+Return strong parts, issues, required fixes, nice-to-have improvements and merge verdict.
+```
+
+
+<Checklist
+  title="Support pack action checklist"
+  items={[
+    'Read this support pack',
+    'Apply the checklist to current project',
+    'Create the required report if applicable',
+    'Submit evidence to mentor'
+  ]}
+/>

@@ -1,0 +1,202 @@
+---
+title: "Advanced Module: Next.js + TypeScript Production Track"
+description: "Evolve from MERN developer to modern full-stack Next.js engineer."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Advanced Module: Next.js + TypeScript Production Track
+
+
+## Purpose
+
+This advanced module teaches students how to move from classic MERN into modern full-stack TypeScript with Next.js App Router.
+
+## Recommended project
+
+**SkillBridge Pro** — a talent marketplace / mentorship platform.
+
+Roles:
+
+- Student/User
+- Mentor/Service Provider
+- Admin
+
+Required pages:
+
+- Home
+- Mentor/service listing
+- Details page
+- Login/register
+- Student dashboard
+- My bookings
+- Submit project review
+- Mentor dashboard
+- Admin dashboard
+- Manage users/services/bookings
+
+## Key mental models
+
+### Server Components
+
+Use for data fetching, database reads, server-only logic and mostly static UI.
+
+### Client Components
+
+Use for state, event handlers, browser APIs, modals, interactive filters and form UI.
+
+### Route Handlers
+
+Use for API-style endpoints, webhooks, external clients and custom request/response control.
+
+### Server Actions
+
+Use for forms and mutations inside the app, but always verify auth and authorization server-side.
+
+## Required advanced docs
+
+```txt
+docs/NEXTJS_ADVANCED_PROJECT_BRIEF.md
+docs/NEXTJS_ARCHITECTURE_DECISIONS.md
+docs/SERVER_CLIENT_COMPONENT_PLAN.md
+docs/ROUTE_HANDLER_PLAN.md
+docs/SERVER_ACTION_PLAN.md
+docs/AUTHORIZATION_MATRIX.md
+docs/DATA_FETCHING_AND_CACHING_PLAN.md
+docs/DATABASE_MODEL_PLAN.md
+docs/FORM_VALIDATION_PLAN.md
+docs/ERROR_HANDLING_PLAN.md
+docs/PERFORMANCE_PLAN.md
+docs/TESTING_PLAN.md
+docs/DEPLOYMENT_PLAN.md
+docs/CONTINUOUS_DEVELOPMENT_ROADMAP.md
+```
+
+
+## Official resources
+
+
+| Resource | Link | Why use it |
+|---|---|---|
+| Google Antigravity Docs | https://antigravity.google/docs/ | Antigravity concepts, agent workflow, browser, MCP, skills and artifacts |
+| React Docs | https://react.dev/learn | Core React concepts for components, state, and UI structure |
+| Vite Docs | https://vite.dev/guide/ | React/Vite setup and local development |
+| Tailwind CSS Docs | https://tailwindcss.com/docs | Utility-first styling and responsive design |
+| Figma Dev Mode | https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode | Developer handoff and design inspection |
+| Express Docs | https://expressjs.com/ | Backend routing, middleware, and error handling |
+| MongoDB Docs | https://www.mongodb.com/docs/ | Database setup and data modeling |
+| Mongoose Docs | https://mongoosejs.com/docs/ | MongoDB ODM schemas and models |
+| TanStack Query | https://tanstack.com/query/latest/docs/framework/react/quick-start | Server state, queries, mutations, invalidation |
+| Vitest | https://vitest.dev/ | Frontend/unit testing |
+| Playwright | https://playwright.dev/ | Browser and E2E verification |
+| Next.js Docs | https://nextjs.org/docs/app | Advanced full-stack React framework |
+
+
+## Required video layer
+
+<YouTubeEmbed videoId="RBM03RihZVs" title="Common Next.js App Router mistakes" />
+
+Use the video like this:
+
+1. Watch only the relevant parts.
+2. Pause when the workflow is shown.
+3. Write 3–5 lessons in `docs/VIDEO_LEARNING_NOTES.md`.
+4. Add the video link to NotebookLM.
+5. Apply lessons to the practice tasks.
+
+## NotebookLM workflow
+
+Create a notebook named after this module and add this page, the official docs, selected videos, and your project files.
+
+Use this prompt:
+
+```txt
+Create a practical study guide for this module.
+
+Audience:
+Junior MERN developers using Antigravity and NotebookLM.
+
+Output:
+1. Key concepts
+2. Simple explanations
+3. Step-by-step practice workflow
+4. Common mistakes
+5. Submission checklist
+6. 10 quiz questions with answers
+```
+
+## Antigravity safe prompt pattern
+
+```txt
+Read only:
+- [exact file 1]
+- [exact file 2]
+
+Goal:
+[exact task]
+
+Rules:
+- Do not modify unrelated files.
+- Do not install packages without approval.
+- Before editing, list files you will create or modify.
+- After editing, summarize changes.
+- Include verification steps.
+```
+
+## Practice missions
+
+### Practice Mission 1: Create advanced brief
+
+Plan SkillBridge Pro or another Next.js app.
+
+### Practice Mission 2: Setup Next.js project
+
+Use App Router, TypeScript, Tailwind and shadcn/ui.
+
+### Practice Mission 3: Implement core flows
+
+Build server/client pages, auth, database, forms, and admin role.
+
+### Practice Mission 4: Create roadmap
+
+Write 30/60/90-day continuous growth plan.
+
+
+## Required submissions
+
+- Next.js project repo
+- Live link or deployment plan
+- Advanced docs
+- Server/client component plan
+- Route handler/server action plan
+- Performance review
+- Continuous roadmap
+- Reflection
+
+<Checklist
+  title="Module submission checklist"
+  items={[
+    'NotebookLM study evidence submitted',
+    'Video learning notes submitted',
+    'Required docs/files created',
+    'Antigravity output reviewed manually',
+    'Critical fixes applied',
+    'GitHub updated',
+    'Reflection completed'
+  ]}
+/>
+
+<Quiz moduleId="advanced" />
+
+## Mentor evaluation checklist
+
+| Area | Pass condition |
+|---|---|
+| Learning evidence | NotebookLM and video notes exist |
+| Practical work | Missions completed with screenshots/docs |
+| Antigravity discipline | Scoped prompts and review gates used |
+| Quality | Critical issues fixed |
+| GitHub | Work committed and organized |
+| Reflection | Student explains what was learned and corrected |

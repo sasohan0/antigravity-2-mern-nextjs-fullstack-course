@@ -1,0 +1,30 @@
+{
+  "name": "antigravity-2-mern-nextjs-fullstack-course",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Complete Google Antigravity 2.0 MERN and Next.js full-stack course with MDX lessons, dynamic quizzes, Figma-to-code, testing, deployment, capstone, and reusable SKILL.md templates.",
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@docusaurus/core": "latest",
+    "@docusaurus/preset-classic": "latest",
+    "@mdx-js/react": "latest",
+    "clsx": "latest",
+    "prism-react-renderer": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "latest",
+    "@docusaurus/tsconfig": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}

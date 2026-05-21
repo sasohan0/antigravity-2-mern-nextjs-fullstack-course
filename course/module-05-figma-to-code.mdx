@@ -1,0 +1,145 @@
+---
+title: "Module 5: Figma-to-Code Workflow"
+description: "Inspect Figma designs, extract design tokens, plan components, responsive behavior and implement a small verified UI slice."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Module 5: Figma-to-Code Workflow
+
+
+## Module purpose
+
+Inspect Figma designs, extract design tokens, plan components, responsive behavior and implement a small verified UI slice.
+
+## What students will be able to do
+
+- Explain the module concept clearly.
+- Use Antigravity safely with scoped prompts.
+- Use NotebookLM to study resources and generate quizzes/mind maps.
+- Complete practical deliverables.
+- Submit evidence for mentor review.
+
+
+## Official resources
+
+
+| Resource | Link | Why use it |
+|---|---|---|
+| Google Antigravity Docs | https://antigravity.google/docs/ | Antigravity concepts, agent workflow, browser, MCP, skills and artifacts |
+| React Docs | https://react.dev/learn | Core React concepts for components, state, and UI structure |
+| Vite Docs | https://vite.dev/guide/ | React/Vite setup and local development |
+| Tailwind CSS Docs | https://tailwindcss.com/docs | Utility-first styling and responsive design |
+| Figma Dev Mode | https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode | Developer handoff and design inspection |
+| Express Docs | https://expressjs.com/ | Backend routing, middleware, and error handling |
+| MongoDB Docs | https://www.mongodb.com/docs/ | Database setup and data modeling |
+| Mongoose Docs | https://mongoosejs.com/docs/ | MongoDB ODM schemas and models |
+| TanStack Query | https://tanstack.com/query/latest/docs/framework/react/quick-start | Server state, queries, mutations, invalidation |
+| Vitest | https://vitest.dev/ | Frontend/unit testing |
+| Playwright | https://playwright.dev/ | Browser and E2E verification |
+| Next.js Docs | https://nextjs.org/docs/app | Advanced full-stack React framework |
+
+
+## Required video layer
+
+<YouTubeEmbed videoId="__ABPkb0aF8" title="Figma Dev Mode intro" />
+
+Use the video like this:
+
+1. Watch only the relevant parts.
+2. Pause when the workflow is shown.
+3. Write 3–5 lessons in `docs/VIDEO_LEARNING_NOTES.md`.
+4. Add the video link to NotebookLM.
+5. Apply lessons to the practice tasks.
+
+## NotebookLM workflow
+
+Create a notebook named after this module and add this page, the official docs, selected videos, and your project files.
+
+Use this prompt:
+
+```txt
+Create a practical study guide for this module.
+
+Audience:
+Junior MERN developers using Antigravity and NotebookLM.
+
+Output:
+1. Key concepts
+2. Simple explanations
+3. Step-by-step practice workflow
+4. Common mistakes
+5. Submission checklist
+6. 10 quiz questions with answers
+```
+
+## Antigravity safe prompt pattern
+
+```txt
+Read only:
+- [exact file 1]
+- [exact file 2]
+
+Goal:
+[exact task]
+
+Rules:
+- Do not modify unrelated files.
+- Do not install packages without approval.
+- Before editing, list files you will create or modify.
+- After editing, summarize changes.
+- Include verification steps.
+```
+
+## Practice missions
+
+### Practice Mission 1: Create design folder
+
+Create `design/` with links, screenshots and assets.
+
+### Practice Mission 2: Create design docs
+
+Create design system, UI spec, component map and responsive plan.
+
+### Practice Mission 3: Implement small slice
+
+Implement Navbar/Hero or selected section and verify in browser.
+
+
+## Required submissions
+
+- DESIGN_SYSTEM.md
+- UI_SPEC.md
+- COMPONENT_MAP.md
+- RESPONSIVE_PLAN.md
+- VISUAL_QA_REPORT.md
+- Screenshots
+- Reflection
+
+<Checklist
+  title="Module submission checklist"
+  items={[
+    'NotebookLM study evidence submitted',
+    'Video learning notes submitted',
+    'Required docs/files created',
+    'Antigravity output reviewed manually',
+    'Critical fixes applied',
+    'GitHub updated',
+    'Reflection completed'
+  ]}
+/>
+
+<Quiz moduleId="module5" />
+
+## Mentor evaluation checklist
+
+| Area | Pass condition |
+|---|---|
+| Learning evidence | NotebookLM and video notes exist |
+| Practical work | Missions completed with screenshots/docs |
+| Antigravity discipline | Scoped prompts and review gates used |
+| Quality | Critical issues fixed |
+| GitHub | Work committed and organized |
+| Reflection | Student explains what was learned and corrected |

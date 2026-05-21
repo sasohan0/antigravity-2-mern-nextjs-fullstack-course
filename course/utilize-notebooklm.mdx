@@ -1,0 +1,171 @@
+---
+title: "Utilize NotebookLM: Study Faster with Docs, Videos and Project Files"
+description: "NotebookLM workflow for every module."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Utilize NotebookLM: Study Faster with Docs, Videos and Project Files
+
+
+## Purpose
+
+NotebookLM acts as the student learning layer. It should not replace practice, but it helps students understand official docs, videos, and their own project files.
+
+## Required NotebookLM outputs per major module
+
+- Study Guide
+- Mind Map
+- Video Learning Summary
+- Flashcards or Quiz
+- Audio Overview if available
+- Confusing topic explanation
+- Submission checklist
+
+## Universal NotebookLM prompt
+
+```txt
+Create a beginner-friendly guide from these sources.
+
+Audience:
+Junior MERN stack developers learning with Antigravity.
+
+Output:
+1. Key concepts
+2. Simple explanation
+3. Practical examples
+4. Common mistakes
+5. Practice tasks
+6. Quiz questions with answers
+7. Checklist before submission
+```
+
+## Video summary prompt
+
+```txt
+I added videos for this module.
+
+Create a video learning summary:
+1. Main lessons
+2. What to apply in my project
+3. Common mistakes
+4. 5 action tasks
+5. 5 questions to self-check
+```
+
+
+## Official resources
+
+
+| Resource | Link | Why use it |
+|---|---|---|
+| Google Antigravity Docs | https://antigravity.google/docs/ | Antigravity concepts, agent workflow, browser, MCP, skills and artifacts |
+| React Docs | https://react.dev/learn | Core React concepts for components, state, and UI structure |
+| Vite Docs | https://vite.dev/guide/ | React/Vite setup and local development |
+| Tailwind CSS Docs | https://tailwindcss.com/docs | Utility-first styling and responsive design |
+| Figma Dev Mode | https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode | Developer handoff and design inspection |
+| Express Docs | https://expressjs.com/ | Backend routing, middleware, and error handling |
+| MongoDB Docs | https://www.mongodb.com/docs/ | Database setup and data modeling |
+| Mongoose Docs | https://mongoosejs.com/docs/ | MongoDB ODM schemas and models |
+| TanStack Query | https://tanstack.com/query/latest/docs/framework/react/quick-start | Server state, queries, mutations, invalidation |
+| Vitest | https://vitest.dev/ | Frontend/unit testing |
+| Playwright | https://playwright.dev/ | Browser and E2E verification |
+| Next.js Docs | https://nextjs.org/docs/app | Advanced full-stack React framework |
+
+
+## Required video layer
+
+<YouTubeEmbed videoId="uzFOhkORVfk" title="Notebook-assisted AI workflow reference" />
+
+Use the video like this:
+
+1. Watch only the relevant parts.
+2. Pause when the workflow is shown.
+3. Write 3–5 lessons in `docs/VIDEO_LEARNING_NOTES.md`.
+4. Add the video link to NotebookLM.
+5. Apply lessons to the practice tasks.
+
+## NotebookLM workflow
+
+Create a notebook named after this module and add this page, the official docs, selected videos, and your project files.
+
+Use this prompt:
+
+```txt
+Create a practical study guide for this module.
+
+Audience:
+Junior MERN developers using Antigravity and NotebookLM.
+
+Output:
+1. Key concepts
+2. Simple explanations
+3. Step-by-step practice workflow
+4. Common mistakes
+5. Submission checklist
+6. 10 quiz questions with answers
+```
+
+## Antigravity safe prompt pattern
+
+```txt
+Read only:
+- [exact file 1]
+- [exact file 2]
+
+Goal:
+[exact task]
+
+Rules:
+- Do not modify unrelated files.
+- Do not install packages without approval.
+- Before editing, list files you will create or modify.
+- After editing, summarize changes.
+- Include verification steps.
+```
+
+## Practice missions
+
+### Practice Mission 1: Create NotebookLM template
+
+Create a reusable `docs/NOTEBOOKLM_WORKFLOW.md` file.
+
+### Practice Mission 2: Practice with one official doc
+
+Summarize React or Antigravity docs into a short study guide.
+
+
+## Required submissions
+
+- NotebookLM notebook screenshot
+- Study guide screenshot
+- Video summary screenshot
+- Flashcards or quiz screenshot
+
+<Checklist
+  title="Module submission checklist"
+  items={[
+    'NotebookLM study evidence submitted',
+    'Video learning notes submitted',
+    'Required docs/files created',
+    'Antigravity output reviewed manually',
+    'Critical fixes applied',
+    'GitHub updated',
+    'Reflection completed'
+  ]}
+/>
+
+<Quiz moduleId="intro" />
+
+## Mentor evaluation checklist
+
+| Area | Pass condition |
+|---|---|
+| Learning evidence | NotebookLM and video notes exist |
+| Practical work | Missions completed with screenshots/docs |
+| Antigravity discipline | Scoped prompts and review gates used |
+| Quality | Critical issues fixed |
+| GitHub | Work committed and organized |
+| Reflection | Student explains what was learned and corrected |

@@ -1,0 +1,22 @@
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+}
+
+.heroBanner { padding: 4rem 0; text-align: center; }
+.cardGrid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 1.5rem 0; }
+.courseCard { border: 1px solid var(--ifm-color-emphasis-200); border-radius: 14px; padding: 1rem; background: var(--ifm-background-surface-color); }
+.videoEmbed { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 14px; border: 1px solid var(--ifm-color-emphasis-200); margin: 1rem 0; }
+.videoEmbed iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+.quizBox { border: 1px solid var(--ifm-color-emphasis-300); border-radius: 14px; padding: 1rem; margin: 1.5rem 0; background: var(--ifm-background-surface-color); }
+.quizOption { display: block; width: 100%; text-align: left; padding: .7rem .9rem; margin: .5rem 0; border-radius: 10px; border: 1px solid var(--ifm-color-emphasis-300); background: transparent; cursor: pointer; }
+.quizOption:hover { border-color: var(--ifm-color-primary); }
+.quizOptionCorrect { background: #dcfce7; border-color: #16a34a; color: #14532d; }
+.quizOptionWrong { background: #fee2e2; border-color: #dc2626; color: #7f1d1d; }
+.smallMuted { color: var(--ifm-color-emphasis-700); font-size: .95rem; }

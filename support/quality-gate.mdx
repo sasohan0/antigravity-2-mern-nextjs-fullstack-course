@@ -1,0 +1,69 @@
+---
+title: "Security, Accessibility, Performance and SEO Quality Gate"
+description: "Final quality checklist before deployment and submission."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Security, Accessibility, Performance and SEO Quality Gate
+
+
+## Security
+
+- No `.env` committed
+- No database URI exposed
+- Passwords hashed
+- Admin routes protected server-side
+- User can access only own data
+- Backend validates body/query/params
+- Production errors do not expose stack traces
+- CORS restricted to frontend URL
+
+## Accessibility
+
+- Buttons have accessible names
+- Inputs have labels
+- Images have alt text or are decorative
+- Keyboard navigation works
+- Focus states visible
+- Text contrast readable
+- Errors and loading states understandable
+
+## Performance
+
+- Images optimized
+- No huge unused assets
+- No unnecessary packages
+- Loading states used
+- API calls not repeated unnecessarily
+- Production build passes
+- Lighthouse report completed
+
+## SEO
+
+- Meaningful title
+- Meta description where relevant
+- Proper heading structure
+- Descriptive links
+- Public pages crawlable
+
+## Antigravity prompt
+
+```txt
+Act as a senior security, accessibility, performance and SEO reviewer.
+Create docs/QUALITY_GATE_REPORT.md with blockers, medium issues, low issues, required fixes and verdict.
+Do not edit files yet.
+```
+
+
+<Checklist
+  title="Support pack action checklist"
+  items={[
+    'Read this support pack',
+    'Apply the checklist to current project',
+    'Create the required report if applicable',
+    'Submit evidence to mentor'
+  ]}
+/>

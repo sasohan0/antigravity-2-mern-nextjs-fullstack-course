@@ -1,0 +1,203 @@
+---
+title: "Bonus Module: Reusable SKILL.md Library"
+description: "Create a reusable personal Agent Skills library for future projects."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Bonus Module: Reusable SKILL.md Library
+
+
+## Purpose
+
+This module turns Antigravity from a one-project tool into a reusable AI development system.
+
+## Recommended library structure
+
+```txt
+my-agent-skills-library/
+  README.md
+  SKILL_LIBRARY_INDEX.md
+  CHECKLISTS/
+    skill-authoring-checklist.md
+    skill-safety-checklist.md
+    skill-testing-checklist.md
+    copy-skill-into-project-checklist.md
+  templates/
+    basic-skill-template.md
+    review-skill-template.md
+    implementation-skill-template.md
+    verification-skill-template.md
+  skills/
+    planning/prd-generator/SKILL.md
+    architecture/mern-architecture-review/SKILL.md
+    frontend/react-ui-polish/SKILL.md
+    backend/express-api-quality/SKILL.md
+    testing/test-plan-generator/SKILL.md
+    deployment/portfolio-readme-generator/SKILL.md
+```
+
+## Universal SKILL.md template
+
+```md
+---
+name: reusable-skill-name
+description: Use this skill when [specific situation]. Do not use for [clear non-use case].
+---
+
+# Skill Title
+
+## Goal
+...
+
+## When to Use
+...
+
+## Required Inputs
+...
+
+## Workflow
+1. Read required inputs.
+2. Create plan.
+3. List files to change.
+4. Execute only requested scope.
+5. Verify.
+6. Summarize.
+
+## Constraints
+- Do not expose secrets.
+- Do not modify unrelated files.
+- Do not install packages without approval.
+
+## Output Format
+1. Summary
+2. Files reviewed
+3. Plan
+4. Risks
+5. Verification steps
+6. Final verdict
+```
+
+
+## Official resources
+
+
+| Resource | Link | Why use it |
+|---|---|---|
+| Google Antigravity Docs | https://antigravity.google/docs/ | Antigravity concepts, agent workflow, browser, MCP, skills and artifacts |
+| React Docs | https://react.dev/learn | Core React concepts for components, state, and UI structure |
+| Vite Docs | https://vite.dev/guide/ | React/Vite setup and local development |
+| Tailwind CSS Docs | https://tailwindcss.com/docs | Utility-first styling and responsive design |
+| Figma Dev Mode | https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode | Developer handoff and design inspection |
+| Express Docs | https://expressjs.com/ | Backend routing, middleware, and error handling |
+| MongoDB Docs | https://www.mongodb.com/docs/ | Database setup and data modeling |
+| Mongoose Docs | https://mongoosejs.com/docs/ | MongoDB ODM schemas and models |
+| TanStack Query | https://tanstack.com/query/latest/docs/framework/react/quick-start | Server state, queries, mutations, invalidation |
+| Vitest | https://vitest.dev/ | Frontend/unit testing |
+| Playwright | https://playwright.dev/ | Browser and E2E verification |
+| Next.js Docs | https://nextjs.org/docs/app | Advanced full-stack React framework |
+
+
+## Required video layer
+
+<YouTubeEmbed videoId="wPSjXU5wvDk" title="Create Agent Skills in Antigravity" />
+
+Use the video like this:
+
+1. Watch only the relevant parts.
+2. Pause when the workflow is shown.
+3. Write 3–5 lessons in `docs/VIDEO_LEARNING_NOTES.md`.
+4. Add the video link to NotebookLM.
+5. Apply lessons to the practice tasks.
+
+## NotebookLM workflow
+
+Create a notebook named after this module and add this page, the official docs, selected videos, and your project files.
+
+Use this prompt:
+
+```txt
+Create a practical study guide for this module.
+
+Audience:
+Junior MERN developers using Antigravity and NotebookLM.
+
+Output:
+1. Key concepts
+2. Simple explanations
+3. Step-by-step practice workflow
+4. Common mistakes
+5. Submission checklist
+6. 10 quiz questions with answers
+```
+
+## Antigravity safe prompt pattern
+
+```txt
+Read only:
+- [exact file 1]
+- [exact file 2]
+
+Goal:
+[exact task]
+
+Rules:
+- Do not modify unrelated files.
+- Do not install packages without approval.
+- Before editing, list files you will create or modify.
+- After editing, summarize changes.
+- Include verification steps.
+```
+
+## Practice missions
+
+### Practice Mission 1: Create library structure
+
+Create reusable folders, templates and checklists.
+
+### Practice Mission 2: Create core skills
+
+Create planning, architecture, frontend, backend, testing and deployment skills.
+
+### Practice Mission 3: Test and improve skills
+
+Use sandbox docs to test triggers and output format.
+
+
+## Required submissions
+
+- Reusable skills library repo/folder
+- README.md
+- SKILL_LIBRARY_INDEX.md
+- At least 8 SKILL.md files
+- At least 3 reference checklists
+- SKILL_TEST_REPORT.md
+- Reflection
+
+<Checklist
+  title="Module submission checklist"
+  items={[
+    'NotebookLM study evidence submitted',
+    'Video learning notes submitted',
+    'Required docs/files created',
+    'Antigravity output reviewed manually',
+    'Critical fixes applied',
+    'GitHub updated',
+    'Reflection completed'
+  ]}
+/>
+
+<Quiz moduleId="module4" />
+
+## Mentor evaluation checklist
+
+| Area | Pass condition |
+|---|---|
+| Learning evidence | NotebookLM and video notes exist |
+| Practical work | Missions completed with screenshots/docs |
+| Antigravity discipline | Scoped prompts and review gates used |
+| Quality | Critical issues fixed |
+| GitHub | Work committed and organized |
+| Reflection | Student explains what was learned and corrected |

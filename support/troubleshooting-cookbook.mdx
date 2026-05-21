@@ -1,0 +1,64 @@
+---
+title: "Universal Troubleshooting Cookbook"
+description: "A practical fix guide for Antigravity quota, Figma, Tailwind, MongoDB, JWT, CORS, Vercel, Render and build issues."
+---
+
+import Quiz from '@site/src/components/Quiz';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import Checklist from '@site/src/components/Checklist';
+
+# Universal Troubleshooting Cookbook
+
+
+## Antigravity quota/context issue
+
+Use smaller prompts, specify exact files, save context in docs, and reuse skills.
+
+```txt
+Read only docs/API_CONTRACT.md and backend/src/modules/foods.
+Fix only the food route validation issue.
+Do not scan the full repository.
+```
+
+## Unrelated file changes
+
+Ask Antigravity to list changed files and revert unrelated changes.
+
+## Tailwind not working
+
+Check package install, CSS import, Vite config, class names and dev server restart.
+
+## MongoDB connection failed
+
+Check URI, password encoding, database user, network access, active cluster and `.env` loading.
+
+## JWT 401
+
+Check token exists, Authorization header format, backend secret and expiry.
+
+## Admin 403
+
+Check database user role and server-side middleware. Hiding frontend buttons is not security.
+
+## CORS
+
+If API works in Postman but not browser, check backend `CLIENT_URL`, frontend API base URL and redeployment.
+
+## Vercel
+
+Check root directory, build command, output directory, env variables and TypeScript errors.
+
+## Render
+
+Check root directory, build command, start command, `process.env.PORT`, `MONGODB_URI` and `JWT_SECRET`.
+
+
+<Checklist
+  title="Support pack action checklist"
+  items={[
+    'Read this support pack',
+    'Apply the checklist to current project',
+    'Create the required report if applicable',
+    'Submit evidence to mentor'
+  ]}
+/>
